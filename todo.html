@@ -19,13 +19,9 @@ function addNewTask () {
 	if (newItem != "") {
 		$('#newTask').val("");
 		i++;
-		var newLi = "<li id=li"+i+" class='list-group-item'> " + newItem + "<div class='btn-group-sm pull-right'><button id=btn"+i+" onclick='editTask(this)' class='btn btn-default'><span class='pull-right glyphicon glyphicon-edit'></span></button><button class='btn btn-default' onclick= $('#li"+i+"').remove()><span class='pull-right glyphicon glyphicon-remove'></span></button></div></li>";
+		var newLi = "<li id=li"+i+" class='list-group-item'> " + newItem + "<div class='btn-group-sm pull-right'><button class='btn btn-default' onclick= $('#li"+i+"').remove()><span class='pull-right glyphicon glyphicon-remove'></span></button></div></li>";
 		$('#listWork').append(newLi);
 	};
-}
-
-function editTask(object) {
-	
 }
 
 </script>
